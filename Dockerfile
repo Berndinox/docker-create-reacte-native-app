@@ -2,7 +2,8 @@ FROM node:alpine
 MAINTAINER Bernd KLAUS "https://berndklaus.at"
 
 WORKDIR /
-RUN create-react-native-app app
+RUN npm install -g create-react-native-app \
+ && create-react-native-app app
 WORKDIR /app
 
 VOLUME /app
