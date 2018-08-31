@@ -7,7 +7,6 @@ RUN apk add --no-cache bash \
  && create-react-native-app app 
 WORKDIR /app
 
-VOLUME /app
 EXPOSE 19000
 
 CMD [ "yarn", "start" ]
